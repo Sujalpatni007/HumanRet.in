@@ -1,0 +1,11 @@
+<svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="80" height="20" rx="4" fill="none" stroke="#000000" stroke-width="2"/>
+  <path d="M25 15H20V25H25V15Z" fill="#000000"/>
+  <path d="M35 15H30V25H35V15Z" fill="#000000"/>
+  <path d="M45 15H40V25H45V15Z" fill="#000000"/>
+  <path d="M55 15H50V25H55V15Z" fill="#000000"/>
+  <path d="M65 15H60V25H65V15Z" fill="#000000"/>
+  <path d="M75 15H70V25H75V15Z" fill="#000000"/>
+  <path d="M85 15H80V25H85V15Z" fill="#000000"/>
+  <text x="50" y="35" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#000000">TECHCORP</text>
+</svg>

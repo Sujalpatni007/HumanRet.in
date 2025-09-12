@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="50" r="30" fill="none" stroke="#FF3237" stroke-width="3"/>
+  <path d="M40 80L60 50L80 80" fill="none" stroke="#000000" stroke-width="2"/>
+  <path d="M30 50H90" stroke="#000000" stroke-width="2"/>
+  <path d="M60 20V80" stroke="#000000" stroke-width="2"/>
+  <circle cx="60" cy="50" r="10" fill="none" stroke="#FF3237" stroke-width="2"/>
+  <path d="M55 50H65" stroke="#000000" stroke-width="2"/>
+  <path d="M60 45V55" stroke="#000000" stroke-width="2"/>
+  <circle cx="40" cy="50" r="5" fill="#FF3237" opacity="0.5"/>
+  <circle cx="80" cy="50" r="5" fill="#FF3237" opacity="0.5"/>
+  <circle cx="60" cy="30" r="5" fill="#FF3237" opacity="0.5"/>
+  <circle cx="60" cy="70" r="5" fill="#FF3237" opacity="0.5"/>
+  <text x="60" y="100" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#000000">INNOVATION IN TECHNOLOGY</text>
+</svg>

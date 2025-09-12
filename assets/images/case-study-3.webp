@@ -1,0 +1,8 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="10" fill="#E0E0E0"/>
+  <rect x="50" y="50" width="500" height="300" rx="5" fill="#BDBDBD"/>
+  <text x="300" y="180" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">Social Media Campaign</text>
+  <text x="300" y="220" text-anchor="middle" font-family="Arial" font-size="16" fill="#000000">Generated 2.5M impressions in 30 days</text>
+  <path d="M250 250H350V280H250V250Z" fill="#FF3237"/>
+  <text x="300" y="270" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF">READ NOW</text>
+</svg>

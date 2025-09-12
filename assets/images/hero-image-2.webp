@@ -1,0 +1,8 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="20" fill="#EEEEEE"/>
+  <circle cx="300" cy="200" r="150" fill="#E0E0E0"/>
+  <circle cx="300" cy="200" r="100" fill="#BDBDBD"/>
+  <circle cx="300" cy="200" r="50" fill="#9E9E9E"/>
+  <text x="300" y="200" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">Creative Design Process</text>
+  <text x="300" y="230" text-anchor="middle" font-family="Arial" font-size="16" fill="#000000">Hero Image 2</text>
+</svg>

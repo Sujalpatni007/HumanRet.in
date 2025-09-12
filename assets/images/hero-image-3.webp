@@ -1,0 +1,8 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="20" fill="#F5F5F5"/>
+  <path d="M150 100H450V300H150V100Z" fill="#E0E0E0"/>
+  <path d="M200 150H400V250H200V150Z" fill="#BDBDBD"/>
+  <path d="M250 175H350V225H250V175Z" fill="#9E9E9E"/>
+  <text x="300" y="200" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">Brand Development</text>
+  <text x="300" y="230" text-anchor="middle" font-family="Arial" font-size="16" fill="#000000">Hero Image 3</text>
+</svg>
