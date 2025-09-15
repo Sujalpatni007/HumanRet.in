@@ -15,57 +15,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  .hero-claim {
+    background: #000000; 
+    color: #ffffff;
+    padding: clamp(1.5rem, 4vw, 3rem) 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    max-width: 900px;   /* keeps it proportionate */
+    margin: 0 auto;
+  }
+
+  .hero-claim .line {
+    display: block;
+    line-height: 1.4; /* tighter ratio */
+    margin: 0.2em 0;
+    white-space: nowrap;
+  }
+
+  .hero-claim .kicker {
+    font-size: clamp(1.7rem, 1.8vw, 1.6rem);
+    font-weight: 1000;
+  }
+
+  .hero-claim .eyebrow {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    margin: 0.2rem 0;
+  }
+
+  .hero-claim .bigline {
+    font-weight: 800;
+    font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+    margin: 0.15rem 0;
+  }
+
+  .hero-claim .highlight {
+    display: inline-block;
+    background: #FF3237;
+    color: #fff;
+    padding: 0.1em 0.4em;
+    border-radius: 200px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  /* Smaller screens */
+  @media (max-width: 520px) {
+    .hero-claim { padding: 1.5rem 0.8rem; }
+    .hero-claim .bigline { font-size: clamp(1.4rem, 6vw, 2rem); }
+    .hero-claim .eyebrow { font-size: clamp(1.3rem, 5vw, 1.8rem); }
+  }
+</style>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <a href="./" class="header__logo">
-                    <img src="assets/images/HumanRet Logo.svg" alt="HumanRet Logo" class="logo">
+                    <img src="assets/images/HumanRet Logo Black.svg" alt="HumanRet Logo" class="logo">
                 </a>
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item has-dropdown">
-                            <a href="#" class="nav__link">Solutions</a>
-                            <div class="mega-menu">
-                                <div class="container">
-                                    <div class="mega-menu__inner">
-                                        <div class="mega-menu__item">
-                                            <h3 class="mega-menu__title">Branding</h3>
-                                            <p class="mega-menu__desc">Strategic brand development that connects with your audience.</p>
-                                            <a href="#" class="mega-menu__link">Learn More</a>
-                                        </div>
-                                        <div class="mega-menu__item">
-                                            <h3 class="mega-menu__title">Creative Media</h3>
-                                            <p class="mega-menu__desc">Compelling visual storytelling that captures attention.</p>
-                                            <a href="#" class="mega-menu__link">Learn More</a>
-                                        </div>
-                                        <div class="mega-menu__item">
-                                            <h3 class="mega-menu__title">Marketing</h3>
-                                            <p class="mega-menu__desc">Data-driven strategies that drive engagement and conversion.</p>
-                                            <a href="#" class="mega-menu__link">Learn More</a>
-                                        </div>
-                                        <div class="mega-menu__item">
-                                            <h3 class="mega-menu__title">Technology</h3>
-                                            <p class="mega-menu__desc">Innovative solutions that enhance your digital ecosystem.</p>
-                                            <a href="#" class="mega-menu__link">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#case-studies" class="nav__link">Solutions</a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#blog" class="nav__link">Blog</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Our Work</a>
+                            <a href="#contact" class="nav__link">Contact</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">News & Events</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Blog</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Contact</a>
-                        </li>
+                    
                     </ul>
                 </nav>
                 <a href="#contact" class="btn btn--primary header__cta">Enquire Now</a>
@@ -77,90 +105,430 @@
             </div>
         </div>
     </header>
-
     <!-- Mobile Menu -->
     <div class="mobile-menu">
         <div class="mobile-menu__inner">
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item has-submenu">
-                    <a href="#" class="mobile-menu__link">Solutions</a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Branding</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Creative Media</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Marketing</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Technology</a>
-                        </li>
-                    </ul>
+                    <a href="#case-studies" class="mobile-menu__link">Solutions</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Our Work</a>
+                    <a href="#blog" class="mobile-menu__link">Blog</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">News & Events</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Blog</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Contact</a>
+                    <a href="#contact" class="mobile-menu__link">Contact</a>
                 </li>
             </ul>
             <a href="#contact" class="btn btn--primary mobile-menu__cta">Enquire Now</a>
         </div>
     </div>
+<!-- Add this CSS to your existing styles -->
+<style>
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
 
-    <!-- Hero Section -->
-    <section class="hero">
+        .loading-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+.loader-counter {
+    font-size: 3rem;
+    font-weight: 1000;
+    color: #FF3237;
+    margin-bottom: 1rem;
+font-family: 'Anton', sans-serif;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    letter-spacing: 3px;
+    /* Smooth gradient fade */
+    background: linear-gradient(
+        to right,
+        #FF3237 0%,        /* solid red start */
+        #FF3237 70%,       /* keep red for most of the text */
+        rgba(255, 255, 255, 0.9) 100% /* fade into soft white */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+        .loader-bar {
+            width: 300px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            overflow: auto;
+        }
+
+        .loader-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #FF3237, #ffffff);
+            width: 0%;
+            transition: width 0.1s ease;
+            border-radius: 2px;
+        }
+
+        .loading-text {
+            margin-top: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .loader-counter {
+                font-size: 2.5rem;
+                min-height: 2.5rem;
+            }
+            .loader-bar {
+                width: 250px;
+            }
+        }
+    </style>
+
+<div class="loading-screen" id="loadingScreen">
+        <div class="loader-counter" id="counter"></div>
+        <div class="loader-bar">
+            <div class="loader-progress" id="progress"></div>
+        </div>
+        <div class="loading-text">Unfolding digital brilliance....</div>
+    </div>
+
+    <script>
+        // Array of words to cycle through
+        const loadingWords = [
+    'Branding',
+    'Marketing',
+    'Strategy',
+    'Analytics',
+    'Creative',
+    'Design',
+    'Content',
+    'Social',
+    'Digital',
+    'Growth',
+    'Conversion',
+    'Engagement',
+    'Targeting',
+    'Automation',
+    'Optimization',
+    'Retention'
+];
+
+
+        let currentIndex = 0;
+        let progress = 0;
+        const totalDuration = 1900; // 3 seconds total
+        const intervalTime = totalDuration / loadingWords.length;
+
+        const counter = document.getElementById('counter');
+        const progressBar = document.getElementById('progress');
+        const loadingScreen = document.getElementById('loadingScreen');
+
+        function updateLoader() {
+            // Update word
+            counter.textContent = loadingWords[currentIndex];
+            
+            // Update progress bar
+            progress = ((currentIndex + 1) / loadingWords.length) * 100;
+            progressBar.style.width = progress + '%';
+            
+            currentIndex++;
+            
+            // Check if we've gone through all words
+            if (currentIndex >= loadingWords.length) {
+                // Hide loading screen after a brief delay
+                setTimeout(() => {
+                    loadingScreen.classList.add('hidden');
+                }, 200);
+                return;
+            }
+            
+            // Continue to next word
+            setTimeout(updateLoader, intervalTime);
+        }
+
+        // Start the loader
+        setTimeout(updateLoader, 100); // Small delay before starting
+    </script>
+
+
+<!-- Keep your existing hero section as is -->
+
+
+<section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title"></h1>
+            <section class="hero-claim">
+  <span class="line kicker">We are an</span>
+  <span class="line eyebrow">AI marketing agency</span>
+  <span class="line bigline">that <span class="highlight">accelerates</span> brands</span>
+  <span class="line bigline" style="font-weight:700;">towards sustained growth</span>
+</section>
+
+        </div>
+    </section>
+
+
+<script>
+// Simple Loading Animation
+let counter = 0;
+const counterElement = document.getElementById('counter');
+const progressElement = document.getElementById('progress');
+const loadingScreen = document.getElementById('loadingScreen');
+
+function updateLoader() {
+    if (counter <= 100) {
+        counterElement.textContent = counter;
+        progressElement.style.width = counter + '%';
+        counter++;
+        setTimeout(updateLoader, 10); // Adjust speed here (lower = faster)
+    } else {
+        setTimeout(() => {
+            loadingScreen.classList.add('hidden');
+        }, 500);
+    }
+}
+
+// Start the loader when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    updateLoader();
+});
+</script>
+
+
+<!-- Add this CSS to your existing <head> section -->
+<style>
+/* Video scroll animation styles */
+.video-scroll-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(0.3) rotateX(45deg);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 2;
+}
+
+.video-wrapper.animate {
+    transform: scale(1) rotateX(0deg);
+    opacity: 1;
+}
+
+.video-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Decorative stars */
+.star {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #FF3237, #FF3237);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: twinkle 3s infinite ease-in-out;
+    z-index: 3;
+}
+
+.star-1 { top: 20%; left: 10%; animation-delay: 0s; }
+.star-2 { top: 30%; right: 15%; animation-delay: 1s; }
+.star-3 { bottom: 20%; left: 20%; animation-delay: 2s; }
+.star-4 { bottom: 30%; right: 10%; animation-delay: 1.5s; }
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Background overlay */
+.video-scroll-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Glow effect */
+.video-wrapper.animate::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
+    border-radius: 25px;
+    z-index: -1;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+    to { box-shadow: 0 0 40px rgba(118, 75, 162, 0.8); }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .video-wrapper {
+        width: 95%;
+        transform: scale(0.5) rotateX(30deg);
+    }
+    .star { width: 20px; height: 20px; }
+}
+</style>
+
+<!-- Replace your entire section with this -->
+<section class="video-scroll-section" id="videoContainer">
+    <!-- Decorative stars -->
+    <div class="star star-1"></div>
+    <div class="star star-2"></div>
+    <div class="star star-3"></div>
+    <div class="star star-4"></div>
+
+    <div class="video-wrapper" id="videoWrapper">
+        <iframe 
+            class="video-iframe"
+            src="https://player.vimeo.com/video/1051070997?autoplay=1&playsinline=1&autopause=0&loop=1&muted=1&title=0&portrait=0&byline=0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Demo Video">
+        </iframe>
+    </div>
+</section>
+
+
+<script>
+function handleScrollAnimation() {
+    const videoWrapper = document.getElementById('videoWrapper');
+    const videoContainer = document.getElementById('videoContainer');
+    
+    if (!videoWrapper || !videoContainer) return;
+    
+    const rect = videoContainer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const triggerPoint = windowHeight * 0.6;
+    
+    if (rect.top < triggerPoint && rect.bottom > 0) {
+        videoWrapper.classList.add('animate');
+    } else {
+        videoWrapper.classList.remove('animate');
+    }
+}
+
+let ticking = false;
+function optimizedScrollHandler() {
+    if (!ticking) {
+        requestAnimationFrame(() => {
+            handleScrollAnimation();
+            ticking = false;
+        });
+        ticking = true;
+    }
+}
+
+window.addEventListener('scroll', optimizedScrollHandler);
+window.addEventListener('load', handleScrollAnimation);
+window.addEventListener('resize', handleScrollAnimation);
+
+// Hover effects
+document.addEventListener('DOMContentLoaded', function() {
+    const videoWrapper = document.getElementById('videoWrapper');
+    
+    videoWrapper.addEventListener('mouseenter', function() {
+        if (this.classList.contains('animate')) {
+            this.style.transform = 'scale(1.05) rotateX(0deg)';
+        }
+    });
+    
+    videoWrapper.addEventListener('mouseleave', function() {
+        if (this.classList.contains('animate')) {
+            this.style.transform = 'scale(1) rotateX(0deg)';
+        }
+    });
+});
+
+
+
+</script>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies" id="case-studies">
         <div class="container">
-            <div class="hero__inner">
-                <div class="hero__content">
-                    <h1 class="hero__title">HumanRet — a digital marketing agency that accelerates brands towards sustained growth</h1>
-                    <p class="hero__subtitle">We create human-centered digital experiences that boost retention, conversions, and brand value.</p>
-                    <div class="hero__cta">
-                        <a href="#contact" class="btn btn--primary">Get in Touch</a>
-                        <a href="#services" class="btn btn--secondary">Our Services</a>
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">Explore the solutions we bring to help brands stand out and scale</p>
+            </div>
+            <div class="case-studies__grid">
+                <div class="case-study">
+                    <div class="case-study__image">
+                        <img src="./assets/images/ecom.svg" alt="Case Study 1" loading="lazy">
                     </div>
-                    <div class="hero__scroll">
-                        <a href="#services" class="scroll-down">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+                    <div class="case-study__overlay">
+                        <h3 class="case-study__title">E-Commerce Transformation</h3>
+                        <a href="#" class="case-study__link" id="openBlogModal">READ NOW</a>
                     </div>
                 </div>
-                <div class="hero__images">
-                    <div class="hero__image hero__image--back">
-                        <img src="./assets/images/hero-image-1.webp" alt="Digital Marketing Strategy" loading="eager">
+                <div class="case-study">
+                    <div class="case-study__image">
+                        <img src="./assets/images/brandrevi.svg" alt="Case Study 2" loading="lazy">
                     </div>
-                    <div class="hero__image hero__image--mid">
-                        <img src="./assets/images/hero-image-2.webp" alt="Creative Design Process" loading="eager">
+                <div class="case-study__overlay">
+                    <h3 class="case-study__title">Brand Revitalization</h3>
+                    <a href="#" class="case-study__link" id="openBrandModal">READ NOW</a>
+                </div>
+                </div>
+                <div class="case-study">
+                    <div class="case-study__image">
+                        <img src="./assets/images/brandmarketing.svg" alt="Case Study 3" loading="lazy">
                     </div>
-                    <div class="hero__image hero__image--front">
-                        <img src="./assets/images/hero-image-3.webp" alt="Brand Development" loading="eager">
-                    </div>
-                    <div class="hero__decorations">
-                        <svg class="star star--1" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 0L19.5 12.5L32 16L19.5 19.5L16 32L12.5 19.5L0 16L12.5 12.5L16 0Z" fill="#FF3237"/>
-                        </svg>
-                        <svg class="star star--2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z" fill="#FF3237"/>
-                        </svg>
-                        <svg class="star star--3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 0L9.8 6.2L16 8L9.8 9.8L8 16L6.2 9.8L0 8L6.2 6.2L8 0Z" fill="#FF3237"/>
-                        </svg>
-                    </div>
+<div class="case-study__overlay">
+    <h3 class="case-study__title">Digital Marketing Campaign</h3>
+    <a href="#" class="case-study__link" id="openMarketingModal">READ NOW</a>
+</div>
                 </div>
             </div>
         </div>
     </section>
 
+    
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
@@ -176,7 +544,7 @@
                     </div>
                     <h3 class="service-card__title">Branding</h3>
                     <p class="service-card__desc">Our holistic branding solutions, such as strategy, language and visualisation not only ensure that your brand stands out amidst the noise but also resonates deeply with your audience, thus fostering enduring connections.</p>
-                    <a href="#" class="service-card__link">See More</a>
+                    
                 </div>
                 <div class="service-card">
                     <div class="service-card__icon">
@@ -188,7 +556,7 @@
                     </div>
                     <h3 class="service-card__title">Creative Media</h3>
                     <p class="service-card__desc">Our creative media isn't just about aesthetics; it's about strategic vision. We blend imagination with purpose, steering your brand's innovative endeavours towards impactful outcomes.</p>
-                    <a href="#" class="service-card__link">See More</a>
+                    
                 </div>
                 <div class="service-card">
                     <div class="service-card__icon">
@@ -200,7 +568,7 @@
                     </div>
                     <h3 class="service-card__title">Marketing</h3>
                     <p class="service-card__desc">Our data-driven approach, combined with creative ingenuity, allows us to tailor strategies that resonate with your target audience, driving engagement, conversion, and long-term brand loyalty.</p>
-                    <a href="#" class="service-card__link">See More</a>
+                    
                 </div>
                 <div class="service-card">
                     <div class="service-card__icon">
@@ -211,229 +579,22 @@
                     </div>
                     <h3 class="service-card__title">Technology</h3>
                     <p class="service-card__desc">Innovation is at the core of our technological solutions. We leverage cutting-edge technologies to architect and enhance your digital ecosystem, ensuring seamless experiences across all touchpoints, from UI/UX Design to app development.</p>
-                    <a href="#" class="service-card__link">See More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients Section -->
-    <section class="clients">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Brands we nurtured into inspiring narratives</h2>
-            </div>
-        </div>
-        <div class="clients__carousel">
-            <div class="clients__track">
-                <div class="clients__item">
-                    <img src="./assets/images/client-1.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-2.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-3.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-4.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-5.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-6.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <!-- Duplicate for infinite scroll effect -->
-                <div class="clients__item">
-                    <img src="./assets/images/client-1.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-2.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-3.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-4.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-5.svg" alt="Client Logo" class="clients__logo">
-                </div>
-                <div class="clients__item">
-                    <img src="./assets/images/client-6.svg" alt="Client Logo" class="clients__logo">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Studies Section -->
-    <section class="case-studies">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Work</h2>
-                <p class="section-subtitle">Explore how we've helped brands achieve remarkable growth</p>
-            </div>
-            <div class="case-studies__grid">
-                <div class="case-study">
-                    <div class="case-study__image">
-                        <img src="./assets/images/case-study-1.webp" alt="Case Study 1" loading="lazy">
-                    </div>
-                    <div class="case-study__overlay">
-                        <h3 class="case-study__title">E-Commerce Transformation</h3>
-                        <a href="#" class="case-study__link">READ NOW</a>
-                    </div>
-                </div>
-                <div class="case-study">
-                    <div class="case-study__image">
-                        <img src="./assets/images/case-study-2.webp" alt="Case Study 2" loading="lazy">
-                    </div>
-                    <div class="case-study__overlay">
-                        <h3 class="case-study__title">Brand Revitalization</h3>
-                        <a href="#" class="case-study__link">READ NOW</a>
-                    </div>
-                </div>
-                <div class="case-study">
-                    <div class="case-study__image">
-                        <img src="./assets/images/case-study-3.webp" alt="Case Study 3" loading="lazy">
-                    </div>
-                    <div class="case-study__overlay">
-                        <h3 class="case-study__title">Digital Marketing Campaign</h3>
-                        <a href="#" class="case-study__link">READ NOW</a>
-                    </div>
-                </div>
-                <div class="case-study">
-                    <div class="case-study__image">
-                        <img src="./assets/images/case-study-4.webp" alt="Case Study 4" loading="lazy">
-                    </div>
-                    <div class="case-study__overlay">
-                        <h3 class="case-study__title">App Development</h3>
-                        <a href="#" class="case-study__link">READ NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section class="awards">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Awards & Recognition</h2>
-            </div>
-            <div class="awards__carousel">
-                <div class="awards__track">
-                    <div class="award">
-                        <img src="./assets/images/award-1.svg" alt="Marketing Excellence Award" class="award__image">
-                        <h3 class="award__title">Marketing Excellence</h3>
-                        <p class="award__year">2023</p>
-                    </div>
-                    <div class="award">
-                        <img src="./assets/images/award-2.svg" alt="Best Digital Agency Award" class="award__image">
-                        <h3 class="award__title">Best Digital Agency</h3>
-                        <p class="award__year">2022</p>
-                    </div>
-                    <div class="award">
-                        <img src="./assets/images/award-3.svg" alt="Creative Design Award" class="award__image">
-                        <h3 class="award__title">Creative Design</h3>
-                        <p class="award__year">2023</p>
-                    </div>
-                    <div class="award">
-                        <img src="./assets/images/award-4.svg" alt="Innovation in Technology Award" class="award__image">
-                        <h3 class="award__title">Innovation in Technology</h3>
-                        <p class="award__year">2022</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Careers Section -->
-    <section class="careers">
-        <div class="container">
-            <div class="careers__inner">
-                <div class="careers__content">
-                    <h2 class="careers__title">Think you can bring your A-Game to HumanRet?</h2>
-                    <p class="careers__desc">Join our team of passionate creators, strategists, and innovators.</p>
-                    <a href="#" class="btn btn--primary careers__cta">Apply Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What Our Clients Say</h2>
-            </div>
-            <div class="testimonials__slider">
-                <div class="testimonial">
-                    <div class="testimonial__content">
-                        <p class="testimonial__quote">"HumanRet transformed our digital presence completely. Their strategic approach to our brand messaging and digital marketing has resulted in a 200% increase in qualified leads."</p>
-                    </div>
-                    <div class="testimonial__author">
-                        <div class="testimonial__image">
-                            <img src="./assets/images/testimonial-1.webp" alt="Sarah Johnson" loading="lazy">
-                        </div>
-                        <div class="testimonial__info">
-                            <h3 class="testimonial__name">Sarah Johnson</h3>
-                            <p class="testimonial__position">Marketing Director, TechCorp</p>
-                        </div>
-                        <div class="testimonial__logo">
-                            <img src="./assets/images/testimonial-logo-1.svg" alt="TechCorp Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__content">
-                        <p class="testimonial__quote">"Working with HumanRet has been a game-changer for our brand. Their creative approach and attention to detail helped us stand out in a crowded market."</p>
-                    </div>
-                    <div class="testimonial__author">
-                        <div class="testimonial__image">
-                            <img src="./assets/images/testimonial-2.webp" alt="Michael Chen" loading="lazy">
-                        </div>
-                        <div class="testimonial__info">
-                            <h3 class="testimonial__name">Michael Chen</h3>
-                            <p class="testimonial__position">CEO, Innovate Solutions</p>
-                        </div>
-                        <div class="testimonial__logo">
-                            <img src="./assets/images/testimonial-logo-2.svg" alt="Innovate Solutions Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__content">
-                        <p class="testimonial__quote">"The team at HumanRet doesn't just deliver projects; they build partnerships. Their strategic insights have been invaluable to our growth."</p>
-                    </div>
-                    <div class="testimonial__author">
-                        <div class="testimonial__image">
-                            <img src="./assets/images/testimonial-3.webp" alt="Emma Rodriguez" loading="lazy">
-                        </div>
-                        <div class="testimonial__info">
-                            <h3 class="testimonial__name">Emma Rodriguez</h3>
-                            <p class="testimonial__position">Brand Manager, Global Retail</p>
-                        </div>
-                        <div class="testimonial__logo">
-                            <img src="./assets/images/testimonial-logo-3.svg" alt="Global Retail Logo">
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Latest Insights</h2>
-                <a href="#" class="section-link">View All</a>
             </div>
             <div class="blog__grid">
                 <div class="blog-card">
                     <div class="blog-card__image">
-                        <img src="./assets/images/blog-1.webp" alt="Blog Post 1" loading="lazy">
+                        <img src="./assets/images/brandmarketing.svg" alt="Blog Post 1" loading="lazy">
                     </div>
                     <div class="blog-card__content">
                         <div class="blog-card__meta">
@@ -447,7 +608,7 @@
                 </div>
                 <div class="blog-card">
                     <div class="blog-card__image">
-                        <img src="./assets/images/blog-2.webp" alt="Blog Post 2" loading="lazy">
+                        <img src="./assets/images/brandrevi.svg" alt="Blog Post 2" loading="lazy">
                     </div>
                     <div class="blog-card__content">
                         <div class="blog-card__meta">
@@ -461,7 +622,7 @@
                 </div>
                 <div class="blog-card">
                     <div class="blog-card__image">
-                        <img src="./assets/images/blog-3.webp" alt="Blog Post 3" loading="lazy">
+                        <img src="./assets/images/ecom.svg" alt="Blog Post 3" loading="lazy">
                     </div>
                     <div class="blog-card__content">
                         <div class="blog-card__meta">
@@ -478,6 +639,8 @@
     </section>
 
     <!-- Contact Section -->
+
+
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact__inner">
@@ -489,13 +652,13 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" fill="#FF3237"/>
                             </svg>
-                            <a href="mailto:contact@humanret.com" class="contact__link">contact@humanret.com</a>
+                            <a href="mailto:humanret.in@gmail.com" class="contact__link">humanret.in@gmail.com</a>
                         </div>
                         <div class="contact__item">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#FF3237"/>
                             </svg>
-                            <p class="contact__text">123 Innovation Street, Digital City</p>
+                            <p class="contact__text">Bengaluru, India</p>
                         </div>
                     </div>
                 </div>
@@ -537,7 +700,53 @@
             </div>
         </div>
     </section>
-
+    <script>
+        // Add this JavaScript to your HTML page
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                company: formData.get('company'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                service: formData.get('service'),
+                message: formData.get('message')
+            };
+            
+            // Show loading state
+            const submitButton = this.querySelector('.form-submit');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Submitting...';
+            submitButton.disabled = true;
+            
+            try {
+                // Replace with your Google Apps Script Web App URL
+                const response = await fetch('https://script.google.com/macros/s/AKfycbz0y5MzxvTZTv-vK6umkljeA4NwAHwvkmRpjSprNF-Io4JJq8Q-2ehbJZr-27uXwx4Z/exec', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                // Success feedback
+                alert('Thank you! Your message has been sent successfully.');
+                this.reset(); // Clear the form
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Sorry, there was an error submitting your form. Please try again.');
+            } finally {
+                // Reset button
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }
+        });
+    </script>
     <!-- Success Modal -->
     <div class="modal" id="successModal">
         <div class="modal__content">
@@ -556,6 +765,7 @@
             <button class="btn btn--primary modal__button">Close</button>
         </div>
     </div>
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -563,7 +773,7 @@
             <div class="footer__inner">
                 <div class="footer__column footer__column--brand">
                     <a href="./" class="footer__logo">
-                        <img src="assets/images/HumanRet Logo Black.svg" alt="HumanRet Logo" class="logo">
+                        <img src="assets/images/HumanRet Logo.svg" alt="HumanRet Logo" class="logo">
                     </a>
                     <p class="footer__desc">HumanRet creates human-centered digital experiences that boost retention, conversions, and brand value.</p>
                 </div>
@@ -571,53 +781,46 @@
                     <h3 class="footer__title">Quick Links</h3>
                     <ul class="footer__links">
                         <li class="footer__link-item">
-                            <a href="#" class="footer__link">Solutions</a>
+                            <a href="#case-studies" class="footer__link">Solutions</a>
                         </li>
                         <li class="footer__link-item">
-                            <a href="#" class="footer__link">Our Work</a>
+                            <a href="#blog" class="footer__link">Blog</a>
                         </li>
                         <li class="footer__link-item">
-                            <a href="#" class="footer__link">Blog</a>
+                            <a href="#contact" class="footer__link">Contact</a>
                         </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Careers</a>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="footer__column">
                     <h3 class="footer__title">Contact</h3>
                     <ul class="footer__links">
                         <li class="footer__link-item">
-                            <a href="mailto:contact@humanret.com" class="footer__link">contact@humanret.com</a>
+                            <a href="mailto:humanret.in@gmail.com" class="footer__link">humanret.in@gmail.com</a>
                         </li>
                         <li class="footer__link-item">
-                            <p class="footer__text">123 Innovation Street, Digital City</p>
+                            <p class="footer__text">Bengaluru, India</p>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__column">
                     <h3 class="footer__title">Follow Us</h3>
                     <div class="footer__social">
-                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/company/humanret/" class="social-icon" aria-label="LinkedIn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V5C21 3.895 20.105 3 19 3ZM9 17H6.477V10H9V17ZM7.694 8.717C6.923 8.717 6.408 8.203 6.408 7.517C6.408 6.831 6.922 6.317 7.779 6.317C8.55 6.317 9.065 6.831 9.065 7.517C9.065 8.203 8.551 8.717 7.694 8.717ZM18 17H15.558V13.174C15.558 12.116 14.907 11.872 14.663 11.872C14.419 11.872 13.605 12.035 13.605 13.174C13.605 13.337 13.605 17 13.605 17H11.082V10H13.605V10.977C13.93 10.407 14.581 10 15.802 10C17.023 10 18 10.977 18 13.174V17Z" fill="currentColor"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-icon" aria-label="Instagram">
+                        <a href="https://www.instagram.com/humanret_in" class="social-icon" aria-label="Instagram">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-icon" aria-label="YouTube">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8387 5.15941C21.498 4.80824 21.0708 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.50198 4.84824 2.16135 5.19941C1.82072 5.55057 1.57879 5.98541 1.46 6.46C1.14521 8.20556 0.991235 9.97631 1 11.75C0.988687 13.537 1.14266 15.3213 1.46 17.08C1.59096 17.5398 1.83831 17.9581 2.17814 18.2945C2.51798 18.6308 2.93882 18.8738 3.4 19C5.12 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0708 18.8668 21.498 18.6118 21.8387 18.2606C22.1793 17.9094 22.4212 17.4746 22.54 17C22.8524 15.2676 22.9948 13.5103 23 11.75C23.0113 9.96295 22.8573 8.1787 22.54 6.42ZM9.75 15.02V8.48L15.5 11.75L9.75 15.02Z" fill="currentColor"/>
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copyright">© 2023 HumanRet. All rights reserved.</p>
+                <p class="footer__copyright">© 2025 HumanRet. All rights reserved.</p>
                 <div class="footer__legal">
                     <a href="#" class="footer__legal-link">Privacy Policy</a>
                     <a href="#" class="footer__legal-link">Terms of Service</a>
@@ -625,6 +828,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <!-- Decorative Elements -->
     <div class="decorative-stars">
@@ -640,5 +845,318 @@
     </div>
 
     <script src="./assets/js/main.js"></script>
+
+<!-- Modal Overlay -->
+    <div class="modal-overlay" id="blogModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">E-Commerce Services We Provide to Help Your Business</h1>
+                <button class="close-button" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>In today's digital landscape, having a robust e-commerce presence isn't just an option—it's essential for business growth. At HumanRet, we understand the complexities of digital transformation and provide comprehensive e-commerce solutions that drive results.</p>
+
+                <h2>Our Complete E-Commerce Solution Suite</h2>
+
+                <h3>🛒 Custom E-Commerce Development</h3>
+                <p>We build tailored e-commerce platforms that reflect your brand identity and meet your specific business requirements. Our development team creates scalable, secure, and user-friendly online stores using cutting-edge technologies.</p>
+
+                <div class="service-highlight">
+                    <strong>Key Features:</strong> Responsive design, mobile optimization, payment gateway integration, inventory management, and SEO-friendly architecture.
+                </div>
+
+                <!-- Add more content as needed -->
+                
+                <div class="cta-section">
+                    <h3>Let's Build Something Amazing Together</h3>
+                    <p>Contact us today to schedule a free consultation and discover how we can accelerate your e-commerce success.</p>
+                    <a href="#contact" class="cta-button" onclick="closeModal()">Get Started Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add the JavaScript here -->
+    <script>
+        // Modal functionality
+        const modal = document.getElementById('blogModal');
+        const openButton = document.querySelector('.case-study__link');
+        const closeButton = document.getElementById('closeModal');
+
+        function openModal() {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        openButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal();
+        });
+
+        closeButton.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    </script>
+
+    <!-- Brand Revitalization Modal Overlay -->
+<div class="modal-overlay" id="brandModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title">Brand Revitalization: Transforming Your Business Identity</h1>
+            <button class="close-button" id="closeBrandModal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>In an ever-evolving marketplace, brands that stand still get left behind. At HumanRet, we specialize in breathing new life into established brands while preserving their core essence and values.</p>
+
+            <h2>Our Brand Revitalization Process</h2>
+
+            <h3>Brand Audit & Analysis</h3>
+            <p>We start with a comprehensive evaluation of your current brand position, market perception, and competitive landscape to identify opportunities for growth and improvement.</p>
+
+            <div class="service-highlight">
+                <strong>What We Analyze:</strong> Brand perception, market positioning, visual identity, messaging consistency, and customer feedback across all touchpoints.
+            </div>
+
+            <h3>Strategic Brand Repositioning</h3>
+            <p>Based on our findings, we develop a strategic roadmap to reposition your brand for maximum impact and relevance in today's market.</p>
+
+            <ul>
+                <li>Market research and competitor analysis</li>
+                <li>Target audience redefinition</li>
+                <li>Brand value proposition refinement</li>
+                <li>Messaging framework development</li>
+                <li>Brand positioning strategy</li>
+            </ul>
+
+            <h3>Visual Identity Refresh</h3>
+            <p>We modernize your visual identity while maintaining brand recognition, ensuring your brand looks fresh, contemporary, and appealing to your target audience.</p>
+
+            <h3>Brand Communication Strategy</h3>
+            <p>Develop compelling narratives and communication strategies that resonate with your audience and differentiate you from competitors.</p>
+
+            <div class="service-highlight">
+                <strong>Deliverables Include:</strong> Brand guidelines, logo redesign, color palette, typography, imagery style, and tone of voice documentation.
+            </div>
+
+            <h2>Why Brand Revitalization Matters</h2>
+
+            <h3>Stay Competitive</h3>
+            <p>Markets evolve, and so do customer expectations. A refreshed brand helps you stay relevant and competitive in your industry.</p>
+
+            <h3>Attract New Customers</h3>
+            <p>A revitalized brand can help you tap into new market segments and attract customers who may have overlooked you before.</p>
+
+            <h3>Re-engage Existing Customers</h3>
+            <p>Show your loyal customers that you're evolving and improving, reinforcing their decision to choose your brand.</p>
+
+            <h3>Improve Brand Perception</h3>
+            <p>Address any negative perceptions and rebuild trust with your target audience through strategic brand positioning.</p>
+
+            <h2>Our Success Stories</h2>
+            <p>We've helped numerous companies across various industries successfully revitalize their brands, resulting in increased market share, improved customer engagement, and enhanced brand equity.</p>
+
+            <p>From startups looking to establish their presence to established companies needing a fresh perspective, we tailor our approach to meet your specific challenges and objectives.</p>
+
+            <h2>Ready to Revitalize Your Brand?</h2>
+            <p>Don't let your brand become outdated or irrelevant. Whether you're facing declining sales, increased competition, or simply want to modernize your image, our brand revitalization services can help you reconnect with your audience and drive business growth.</p>
+
+            <div class="cta-section">
+                <h3>Transform Your Brand Today</h3>
+                <p>Let's discuss how we can revitalize your brand and position it for future success.</p>
+                <a href="#contact" class="cta-button" onclick="closeBrandModal()">Start Your Brand Transformation</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Brand Modal functionality
+    const brandModal = document.getElementById('brandModal');
+    const openBrandButton = document.getElementById('openBrandModal');
+    const closeBrandButton = document.getElementById('closeBrandModal');
+
+    function openBrandModal() {
+        brandModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeBrandModal() {
+        brandModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    openBrandButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        openBrandModal();
+    });
+
+    closeBrandButton.addEventListener('click', closeBrandModal);
+
+    brandModal.addEventListener('click', function(e) {
+        if (e.target === brandModal) {
+            closeBrandModal();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && brandModal.classList.contains('active')) {
+            closeBrandModal();
+        }
+    });
+</script>
+
+<!-- Digital Marketing Campaign Modal -->
+<div class="modal-overlay" id="marketingModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title">Digital Marketing Campaigns That Drive Real Results</h1>
+            <button class="close-button" id="closeMarketingModal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>In the digital age, effective marketing isn't just about being online—it's about being strategically positioned where your customers are most engaged. At HumanRet, we create data-driven digital marketing campaigns that maximize your ROI and accelerate business growth.</p>
+
+            <h2>Our Comprehensive Digital Marketing Services</h2>
+
+            <h3>Search Engine Optimization (SEO)</h3>
+            <p>Dominate search results and drive organic traffic with our proven SEO strategies. We optimize your website to rank higher for keywords that matter most to your business.</p>
+
+            <div class="service-highlight">
+                <strong>SEO Services Include:</strong> Keyword research, on-page optimization, technical SEO, content optimization, link building, and local SEO strategies.
+            </div>
+
+            <h3>Pay-Per-Click (PPC) Advertising</h3>
+            <p>Get immediate visibility and drive targeted traffic with expertly managed PPC campaigns across Google Ads, Facebook, Instagram, LinkedIn, and other platforms.</p>
+
+            <ul>
+                <li>Google Ads campaign management</li>
+                <li>Facebook & Instagram advertising</li>
+                <li>LinkedIn B2B campaigns</li>
+                <li>Shopping ads optimization</li>
+                <li>Remarketing campaigns</li>
+                <li>Conversion tracking & optimization</li>
+            </ul>
+
+            <h3>Social Media Marketing</h3>
+            <p>Build meaningful connections with your audience through strategic social media campaigns that increase brand awareness, engagement, and conversions.</p>
+
+            <h3>Email Marketing Automation</h3>
+            <p>Nurture leads and retain customers with personalized email campaigns that deliver the right message at the right time.</p>
+
+            <div class="service-highlight">
+                <strong>Email Marketing Features:</strong> Automated drip campaigns, segmentation, A/B testing, personalization, and detailed analytics.
+            </div>
+
+            <h3>Content Marketing</h3>
+            <p>Attract and engage your target audience with valuable, relevant content that positions your brand as an industry authority.</p>
+
+            <ul>
+                <li>Blog content strategy</li>
+                <li>Video marketing campaigns</li>
+                <li>Infographic design</li>
+                <li>Webinar planning & promotion</li>
+                <li>Case study development</li>
+                <li>White paper creation</li>
+            </ul>
+
+            <h2>Our Data-Driven Approach</h2>
+
+            <h3>Performance Analytics</h3>
+            <p>We track every metric that matters, from website traffic and conversion rates to customer acquisition costs and lifetime value.</p>
+
+            <h3>Audience Insights</h3>
+            <p>Deep dive into your customer behavior, preferences, and journey to create more targeted and effective campaigns.</p>
+
+            <h3>Continuous Optimization</h3>
+            <p>We constantly test, analyze, and refine our strategies to ensure maximum performance and ROI from your marketing investment.</p>
+
+            <h2>Why Choose Our Digital Marketing Services?</h2>
+
+            <h3>Targeted Campaigns</h3>
+            <p>We don't believe in one-size-fits-all marketing. Every campaign is tailored to your specific audience, goals, and industry.</p>
+
+            <h3>Creative Excellence</h3>
+            <p>Our creative team develops compelling ad copy, stunning visuals, and engaging content that captures attention and drives action.</p>
+
+            <h3>Transparent Reporting</h3>
+            <p>Get detailed monthly reports showing exactly how your campaigns are performing and what results you're achieving.</p>
+
+            <h3>Dedicated Support</h3>
+            <p>Work with a dedicated account manager who understands your business and is committed to your success.</p>
+
+            <h2>Campaign Success Stories</h2>
+            <p>Our clients have seen remarkable results from our digital marketing campaigns:</p>
+
+            <ul>
+                <li><strong>300% increase</strong> in organic website traffic within 6 months</li>
+                <li><strong>250% ROI</strong> on PPC advertising campaigns</li>
+                <li><strong>150% growth</strong> in social media engagement</li>
+                <li><strong>40% improvement</strong> in email open rates</li>
+                <li><strong>200% boost</strong> in lead generation</li>
+            </ul>
+
+            <h2>Ready to Launch Your Next Campaign?</h2>
+            <p>Don't let your competitors capture your market share. Whether you're launching a new product, entering a new market, or looking to scale your existing business, our digital marketing expertise can help you achieve your goals faster and more efficiently.</p>
+
+            <div class="cta-section">
+                <h3>Start Your Digital Marketing Success Story</h3>
+                <p>Let's create a customized digital marketing strategy that delivers measurable results for your business.</p>
+                <a href="#contact" class="cta-button" onclick="closeMarketingModal()">Launch Your Campaign</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Marketing Modal functionality
+    const marketingModal = document.getElementById('marketingModal');
+    const openMarketingButton = document.getElementById('openMarketingModal');
+    const closeMarketingButton = document.getElementById('closeMarketingModal');
+
+    function openMarketingModal() {
+        marketingModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMarketingModal() {
+        marketingModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    openMarketingButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        openMarketingModal();
+    });
+
+    closeMarketingButton.addEventListener('click', closeMarketingModal);
+
+    marketingModal.addEventListener('click', function(e) {
+        if (e.target === marketingModal) {
+            closeMarketingModal();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && marketingModal.classList.contains('active')) {
+            closeMarketingModal();
+        }
+    });
+</script>
+
+
 </body>
 </html>
